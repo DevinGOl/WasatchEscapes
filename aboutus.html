@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="StyleWas.css" />
+
+  <script src="WasEsc.js"></script>
+
+
+
+  <title>Wasatch Escapes</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top justify-content-lg-between">
+
+      <a class="navbar-brand" href="wasatchindex.html"><img src="img/logo1.png" height="50" width="50" class="border border-dark rounded-pill" /></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="nav-item active"><a class="nav-link text-white" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="maps.html">Maps</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="mobile.html"> Mobile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+              Current Conditions
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.snowbird.com/summer-report/" target="_blank">Snowbird</a>
+              <a class="dropdown-item" href="https://www.solitudemountain.com/mountain-and-village/conditions-and-maps#/" target="_blank">Solitude</a>
+              <a class="dropdown-item" href="https://brightonresort.com/conditions" target="_blank">Brighton</a>
+              <a class="dropdown-item" href="https://www.alta.com/weather" target="_blank">Alta</a>
+              <a class="dropdown-item" href="https://www.parkcitymountain.com/the-mountain/mountain-conditions/summer-terrain-status.aspx" target="_blank">Park City</a>
+              <a class="dropdown-item" href="https://www.deervalley.com/explore-the-mountain/mountain-report#/" target="_blank">Deer Valley</a>
+              <a class="dropdown-item" href="https://www.snowbasin.com/the-mountain/conditions/" target="_blank">Snowbasin</a>
+              <a class="dropdown-item" href="https://forecast.weather.gov/MapClick.php?lon=-111.78314208984374&lat=41.39638489653629#.YQn5jFNKgbl" target="_blank">Powder Mountain</a>
+            </div>
+            </li>
+            </ul>
+           
+            <form class="form-inline my-2 my-lg-0">
+              <span class="mr-4">
+                <i class="fa fa-snowflake-o fa-2x" aria-hidden="true" style="color:white;" data-toggle="modal" data-target="#snowfallModal"></i>
+
+            </span>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+    </nav>
+
+  </header>
+
+  <div id="snowfallModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Current Snowfall</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-image: url('img/Backg2.jpeg'); background-size: 100%; ">
+
+  <div class="container container-fluid" style="padding-top:160px">
+    <div class="row row-content">
+      <div class="col-sm-3 col-md">
+        <h3 class="text-center border-bottom border-dark" id="WasE">Who We Are</h3>
+      </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-xs-12 col-md-8 mx-auto">
+            <p id="about">When I moved to Salt Lake City in 2017, I fell immediately in love with the staggering size and beauty of the Wasatch 
+                Mountains. Towering over the Salt Lake Valley, the recreation possibilities are endless, including a staggering 9 world
+            class ski resorts within less than an hours driving distance.  </p>
+            <p id="about">Wasatch Escapes was created to share the love of these mountains and ski resorts with the rest of the world. To connect 
+                others to the beauty and sense of wonder that I experienced the first time I laid eyes on these mountains, and continue to 
+                experience to this day.
+            </p>
+            <p id="about">Explore our site, linking you to current conditions and information from several of the resorts in the Wasatch. 
+                Make the all important decision of which resort to patronize based on the amount and quality of snow that fell overnight.
+            </p>
+            <p id="about">At Wasatch Escapes we are ski & snowboard enthusiasts just like you. We live to get first chair on a powder day in Little
+                Cottonwood canyon, and experience the epicness that comes from it. We love Utah, and though every day in the Wasatch
+                is a great day, we want to help make it specially awesome for you!
+            </p>
+        </div>
+    </div>
+    </div>
+    </div>
+  
+    <footer class="text-center text-lg-start mt-5 border-top">
+
+        <div class="container">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <img src="img/logo1.png" height="300" width="300" class="border border-dark rounded-pill" />
+              </h6>
+          
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Links
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">About Us</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Maps</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Mobile</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Conditions</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Useful
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-2 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p> Little Cottonwood Canyon, Utah</p>
+              <p>
+                
+                info@wasatchescapes.com
+              </p>
+              <p>+ 01 234 567 88</p>
+              <p>+ 01 234 567 89</p>
+            </div>
+            <div class="col-md-2 col-lg-2 mx-auto mb-4 mr-0">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Social
+              </h6>
+              <p>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+              </p>
+              <p>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+              </p>
+              <p>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+              </p>
+              <p>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-4 bg-dark" style= "color: white;">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://wasatchescapes.com/" style="color: white;">Wasatch Escapes</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  
+  
+  
+  
+  
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  
+  
+  
+  
+  </body>
+  
+  </html>

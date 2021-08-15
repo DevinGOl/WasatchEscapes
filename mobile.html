@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS must be placed after Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+  <link rel="stylesheet" href="StyleWas.css" />
+
+  <script src="WasEsc.js"></script>
+
+
+
+  <title>Wasatch Escapes</title>
+
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top justify-content-lg-between">
+
+      <a class="navbar-brand" href="wasatchindex.html"><img src="img/logo1.png" height="50" width="50" class="border border-dark rounded-pill" /></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+          <li class="nav-item active"><a class="nav-link text-white" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="maps.html">Maps</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#"> Mobile</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
+              Current Conditions
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://www.snowbird.com/summer-report/" target="_blank">Snowbird</a>
+              <a class="dropdown-item" href="https://www.solitudemountain.com/mountain-and-village/conditions-and-maps#/" target="_blank">Solitude</a>
+              <a class="dropdown-item" href="https://brightonresort.com/conditions" target="_blank">Brighton</a>
+              <a class="dropdown-item" href="https://www.alta.com/weather" target="_blank">Alta</a>
+              <a class="dropdown-item" href="https://www.parkcitymountain.com/the-mountain/mountain-conditions/summer-terrain-status.aspx" target="_blank">Park City</a>
+              <a class="dropdown-item" href="https://www.deervalley.com/explore-the-mountain/mountain-report#/" target="_blank">Deer Valley</a>
+              <a class="dropdown-item" href="https://www.snowbasin.com/the-mountain/conditions/" target="_blank">Snowbasin</a>
+              <a class="dropdown-item" href="https://forecast.weather.gov/MapClick.php?lon=-111.78314208984374&lat=41.39638489653629#.YQn5jFNKgbl" target="_blank">Powder Mountain</a>
+            </div>
+            </li>
+            </ul>
+           
+            <form class="form-inline my-2 my-lg-0">
+              <span class="mr-4">
+                <i class="fa fa-snowflake-o fa-2x" aria-hidden="true" style="color:white;" data-toggle="modal" data-target="#snowfallModal"></i>
+
+            </span>
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+    </nav>
+
+  </header>
+
+  <div id="snowfallModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Current Snowfall</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="background-image: url('img/Backg2.jpeg'); background-size: 100%; ">

@@ -24,8 +24,7 @@
 
 <body>
   <header>
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top justify-content-lg-between">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg justify-content-lg-between">
 
       <a class="navbar-brand" href="wasatchindex.html"><img src="img/logo1.png" height="50" width="50" class="border border-dark rounded-pill" /></a>
 
@@ -33,12 +32,13 @@
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+    
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
-          <li class="nav-item active"><a class="nav-link text-white" href="#">About Us</a></li>
+          <li class="nav-item active"><a class="nav-link text-white" href="aboutus.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="maps.html">Maps</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#"> Mobile</a>
+          <li class="nav-item"><a class="nav-link text-white" href="mobile.html"> Mobile</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" id="navbardrop" data-toggle="dropdown">
@@ -54,16 +54,15 @@
               <a class="dropdown-item" href="https://www.snowbasin.com/the-mountain/conditions/" target="_blank">Snowbasin</a>
               <a class="dropdown-item" href="https://forecast.weather.gov/MapClick.php?lon=-111.78314208984374&lat=41.39638489653629#.YQn5jFNKgbl" target="_blank">Powder Mountain</a>
             </div>
+          
             </li>
             </ul>
+        
            
             <form class="form-inline my-2 my-lg-0">
               <span class="mr-4">
-              <a href data-toggle="tooltip" data-placement="right" title="Yearly Snowfall"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-snow2" viewBox="0 0 16 16">
-                <path d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793v-1.086l-.646.647a.5.5 0 0 1-.707-.708L7.5 10.293V8.866l-1.236.713-.495 1.85a.5.5 0 1 1-.966-.26l.237-.882-.94.542-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495.94-.542-.882-.237a.5.5 0 1 1 .258-.966l1.85.495L7 8l-1.236-.713-1.849.495a.5.5 0 1 1-.258-.966l.883-.237-.94-.542-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 0 1 .966-.258l.495 1.849.94.542-.236-.883a.5.5 0 0 1 .966-.258l.495 1.849 1.236.713V5.707L6.147 4.354a.5.5 0 1 1 .707-.708l.646.647V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 0 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v1.086l.647-.647a.5.5 0 1 1 .707.708L8.5 5.707v1.427l1.236-.713.495-1.85a.5.5 0 1 1 .966.26l-.236.882.94-.542.495-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495-.94.542.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l1.236.713 1.849-.495a.5.5 0 0 1 .259.966l-.883.237.94.542 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-.94-.542.236.883a.5.5 0 0 1-.966.258L9.736 9.58 8.5 8.866v1.427l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647v1.086l1.354 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z"/>
-              </svg>
-              </a>
-            </span>
+                <i class="fa fa-snowflake-o fa-2x" aria-hidden="true" style="color:white;" data-toggle="modal" data-target="#snowfallModal"></i>
+              </span>
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
@@ -71,15 +70,18 @@
     </nav>
 
   </header>
+  
+  <div style="background-image: url('img/Backg2.jpeg'); background-size: 100%; ">
 
-<div class="container-fluid pt-5">
+<div class="container-fluid pt-3">
   <div class="row row-content align-items-center" id="frontpage">
-    <div class="order-sm-first col-md-3 mx-auto border-right border-left">
-      <div class="">
+    <div class="col-md-3 mx-auto border-right border-left border-dark">
+      
         <div class="mt-sm-5">
-      <h2 class="text-lg-center mb-md-5" id="WasE">Wasatch Escapes</h2>
+      <h2 class="text-lg-center mb-md-5 d-none d-md-block" id="WasE">Wasatch Escapes</h2>
     </div>
-      <p id="main" class="text-sm-center mb-md-5 mb-xs-0">From the Cottonwood Canyons to Park City to Ogden, inform & connect as you explore the majestic Wasatch
+    <div class="pt-xs-5">
+      <p id="main" class="text-sm-center mb-md-5">From the Cottonwood Canyons to Park City to Ogden, inform & connect as you explore the majestic Wasatch
         Mountains.</p>
         </div>
     </div>
@@ -109,38 +111,60 @@
   </div>
 </div>
 
-  <div class="container" style="padding-top: 30px">
-    <div class="row border-bottom">
-      <div class="col hover13">
-        <figure><a href="https://www.snowbird.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SB1.jpeg" alt="Snowbird Logo"></a></figure>
+<div id="snowfallModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Current Snowfall</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col hover13 ">
-        <figure><a href="https://www.solitudemountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SOL2.jpeg" alt="Solitude Logo"></a></figure>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
       </div>
-      <div class="col hover13">
-        <figure><a href="https://www.brightonresort.com" target="_blank"><img style="width: 55%; height: 55%" src="img/BRI3.jpeg" alt="Brighton Logo"></a> </figure>
-      </div>
-      <div class="col hover13">
-        <figure><a href="https://www.alta.com" target="_blank"><img style="width: 55%; height: 55%" src="img/ALTA4.jpeg" alt="Alta Logo"> </a></figure>
-      </div>
-      <div class="col hover13">
-        <figure><a href="https://www.parkcitymountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/PC5.jpeg" alt="Park City Logo"></a> </figure>
-      </div>
-      <div class="col hover13">
-        <figure><a href="https://www.deervalley.com" target="_blank"><img style="width: 55%; height: 55%" src="img/DV6.png" alt="Deer Valley Logo"></a></figure>
-      </div>
-      <div class="col hover13">
-        <figure><a href="https://www.snowbasin.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SnowBas7.png" alt="Snowbasin Logo"></a> </figure>
-      </div>
-      <div class="col hover13">
-        <figure><a href="https://www.powdermountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/Pow8.jpeg" alt="Powder Mountain Logo"></a> </figure>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
+</div>
+
+  <div class="container" style="padding-top: 30px">
+    <div class="row border-bottom border-dark">
+      <div class="col hover13">
+        <figure><a href="https://www.snowbird.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SB1.jpeg" alt="Snowbird Logo" id="FPLogo"></a></figure>
+      </div>
+      <div class="col hover13 ">
+        <figure><a href="https://www.solitudemountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SOL2.jpeg" alt="Solitude Logo" id="FPLogo"></a></figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.brightonresort.com" target="_blank"><img style="width: 55%; height: 55%" src="img/BRI3.jpeg" alt="Brighton Logo" id="FPLogo"></a> </figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.alta.com" target="_blank"><img style="width: 55%; height: 55%" src="img/ALTA4.jpeg" alt="Alta Logo" id="FPLogo"> </a></figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.parkcitymountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/PC5.jpeg" alt="Park City Logo" id="FPLogo"></a> </figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.deervalley.com" target="_blank"><img style="width: 55%; height: 55%" src="img/DV6.png" alt="Deer Valley Logo" id="FPLogo"></a></figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.snowbasin.com" target="_blank"><img style="width: 55%; height: 55%" src="img/SnowBas7.png" alt="Snowbasin Logo" id="FPLogo"></a> </figure>
+      </div>
+      <div class="col hover13">
+        <figure><a href="https://www.powdermountain.com" target="_blank"><img style="width: 55%; height: 55%" src="img/Pow8.jpeg" alt="Powder Mountain Logo" id="FPLogo"></a> </figure>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container" style="padding-top:30px">
     <div class="row row-content">
       <div class="col">
-        <h2 class="text-center">Ski Like It's 2021</h2>
+        <h2 class="text-center" id="WasE">Ski Like It's 2021</h2>
       </div>
     </div>
     <div class="card-group">
@@ -148,8 +172,9 @@
         <img class="card-img-top" src="img/connect1.jpg" alt="Connect 1" style="height: 50%">
         <div class="card-body">
           <h5 class="card-title">Connect on the Slopes</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
+          <p class="card-text">Stay up to date on current conditions, track the location on the mountain of friends, and 
+            check current lift wait times!
+          </p>
 
         </div>
       </div>
@@ -157,21 +182,24 @@
         <img class="card-img-top" src="img/connect2.jpg" alt="Connect 2" style="height: 50%">
         <div class="card-body">
           <h5 class="card-title">Upload Videos/Pictures</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text">Use our mobile app to post pictures and videos on specific areas of the mountain, and follow
+            along with fellow riders to see where the action is!</p>
         </div>
       </div>
       <div class="card">
         <img class="card-img-top" src="img/connect3.jpg" alt="Connect 3" style="height: 50%">
         <div class="card-body">
           <h5 class="card-title">Climb the Vert Leaderboard</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text">Challenge friends to see who can shred the most vert for a day, week or season!</p>
 
         </div>
       </div>
     </div>
 
   </div>
+</div>
+
+  
   <!-- Footer -->
   <footer class="text-center text-lg-start mt-5 border-top">
 
@@ -192,19 +220,19 @@
           <div class="col-md-2 col-lg-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Products
+              Links
             </h6>
             <p>
-              <a href="#!" class="text-reset">Angular</a>
+              <a href="#!" class="text-reset">About Us</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">React</a>
+              <a href="#!" class="text-reset">Maps</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Vue</a>
+              <a href="#!" class="text-reset">Mobile</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Laravel</a>
+              <a href="#!" class="text-reset">Conditions</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -213,7 +241,7 @@
           <div class="col-md-3 col-lg-2 mx-auto mb-4">
             <!-- Links -->
             <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
+              Useful
             </h6>
             <p>
               <a href="#!" class="text-reset">Pricing</a>
@@ -269,9 +297,9 @@
     <!-- Section: Links  -->
 
     <!-- Copyright -->
-    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <div class="text-center p-4 bg-dark" style= "color: white;">
       © 2021 Copyright:
-      <a class="text-reset fw-bold" href="https://wasatchescapes.com/">Wasatch Escapes</a>
+      <a class="text-reset fw-bold" href="https://wasatchescapes.com/" style="color: white;">Wasatch Escapes</a>
     </div>
     <!-- Copyright -->
   </footer>
