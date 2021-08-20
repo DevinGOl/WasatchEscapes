@@ -1,0 +1,29 @@
+
+
+.navbar {
+    background-color: #901CAD;
+}
+
+body {
+    font-family:"Open Sans", sans-serif;
+
+}
+
+h1, h2, h3 {
+    font-family: "Lobster", cursive;
+}
+
+h2 {
+    color: #3046C5;
+}
+
+header h2 {
+    color: #CEC8FF;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}

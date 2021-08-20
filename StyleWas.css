@@ -13,6 +13,21 @@ h2{
 
 }
 
+#about {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 32px;
+	font-weight: bolder;
+}
+
+#WasE {
+	text-shadow: 2px 2px black;
+
+}
+
 #main {
 	font-size: 25px;
 	font-family: fantasy;
@@ -23,7 +38,13 @@ h2{
     width:  300px;
     height: 300px;
 	object-fit:contain;
+	border: 2px solid black
 }
+
+#FPLogo {
+	border: 2px solid black;
+}
+
 
 
 
@@ -47,8 +68,6 @@ h2{
 
 
 
-footer {
-}
 
 .tooltip-inner {
     background-color: #00cc00;
@@ -138,7 +157,8 @@ footer {
 	text-transform: uppercase;
 	text-align: center;
 	position: relative;
-	font-size: 20px;
+	font-family: cursive;
+	font-size: 40px;
 	background-color: transparent;
 	color: white;
 	padding: 1em 0;
@@ -167,3 +187,4 @@ footer {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
   }
+
