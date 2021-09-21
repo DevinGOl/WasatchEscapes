@@ -35,11 +35,19 @@ h3 {
 
 #Trails {
 	float:inline-start;
-    width:  300px;
-    height: 300px;
+	width: 450px;
+    height: 200px;
 	object-fit:contain;
-	border: 2px solid black
+	border: 2px solid black;
 }
+
+@media (min-width: 768px) {
+    #Trails {
+        width: 320px;
+    }
+}
+
+
 
 #FPLogo {
 	border: 2px solid black;
@@ -158,7 +166,7 @@ h3 {
 	text-align: center;
 	position: relative;
 	font-family: cursive;
-	font-size: 40px;
+	font-size: 20px;
 	background-color: transparent;
 	color: white;
 	padding: 1em 0;
