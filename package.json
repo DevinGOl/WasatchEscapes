@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run watch:all",
     "lite": "lite-server",
-    "imagemin": "imagemin IMG/* -o dist/img",
+    "imagemin": "imagemin IMG/*",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "usemin": "usemin mobile.html -d dist --htmlmin -o dist/mobile.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin maps.html -d dist --htmlmin -o dist/maps.html",
